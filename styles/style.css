@@ -3,9 +3,9 @@
     width: 1100px;
     padding: 93px 50px;
     height:293; 
-    font-size: 18px;
-    
+    font-size: 18px;    
 }
+
 .grid__conteiner {
     display: grid; 
     grid-template-columns: 1fr 138px 1fr;
@@ -20,10 +20,16 @@
     margin:0; 
     padding:0;
 }
+
 .list__peculiarity {
     margin-left: 32px;
     list-style-type:circle;
     text-decoration: underline;  
+}
+
+.grid_position_logo {
+    display:flex;
+    align-items:last baseline;
 }
 
 .grid_position_address {
@@ -33,22 +39,116 @@
     gap: 1px;  
     font-style: normal; 
     margin-left: 192px;
-   
 }
 
-.grid_position_logo {
-    display:flex;
-    align-items:last baseline;
-    max-height: px;
-    max-width: px;
-}
- 
-/* Решает проблему перечеркивания  underlin'ом*/
+/* Решает проблему перечеркивания underlin'ом*/
 
 .no-underline { 
     text-decoration: underline;
-    text-underline-offset: 4px;
+    text-underline-offset: 4px;    
+}
+
+/* Ниже стили блока Cover*/
+
+.cover__main {
+    display: block;
+    height: 757px; /* Иначе выходит за рамки*/
+    padding: 165px 50px 25px 50px; /* сделать сделал а суть не понял, почитать про разметку еще раз */
+    position: relative;
+    background-image: url(../images/cover.jpg);
+    background-size: cover;
+    background-position: center;  
+}   
+.overlay {
+    display: block;
+    position: absolute;    
+}
+
+.cover__title {
+    display: block;
+    text-transform: uppercase;
+    font-size: 100px;
+    letter-spacing: 0.3em;
+    color: white;
+}
+
+.aligned-text {
+    display: block;
+    position: relative;  
+    z-index: 1;      
+}
+
+.aligned-text--second {
+    display:;
+    margin-top:9px;
+    margin-left: 286px;
+}
+
+.aligned-text--third {
+    margin-top:2px;
+    margin-left: 554px;
+}
+
+/* Решение для отбивающихся букв */
+
+.individual--cover-letter {
+    position: relative;
+    margin-left:30px; /* Увеличиваем отступ первым двум */
+    margin-right:30px; /* Для последней нужен отступ справа */    
+}
+
+.cover__footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 128px 0px 37px 28px;
+    word-spacing: 19px;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: white;    
+}
+
+/* возможно лишнее, позже проверить удалить или попробовать объединить с полуподвалом */
+
+.cover__footer--button {
+    margin-left: 52px;
+    background: none; 
+    border: 1px solid white;
+    color: white;
+    font-size: 22px;
+    padding:12px 31px;
+    text-transform: uppercase;    
+}
+
+/* Дальше все для блока lots */
+
+.lots-options {
+    display:block;
+    position: relative;
     
 }
 
+.h2-title {} /* Будут Похожие с заголовком About */
 
+.card-container { /* Будет похоже */
+    display: grid;
+    justify-content: space-between; 
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px 24px;
+    gap: 25px;
+}
+
+.card {
+    display: grid; /*  как вариант гридануть */
+    flex-basis: 30%;
+    box-sizing: border-box;
+    padding: 50px 40px 48px 40px;
+    
+}
+  
+.button-lots {
+    display: block;
+    border: none;
+    background-color: white;
+    outline: none;
+    text-decoration: underline; /* Возможно надо будет добавить класс с андерлайном */
+}
