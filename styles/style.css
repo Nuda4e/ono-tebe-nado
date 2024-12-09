@@ -51,13 +51,17 @@
 /* Ниже стили блока Cover*/
 
 .cover__main {
-    display: block;
-    height: 757px; /* Иначе выходит за рамки*/
-    padding: 165px 50px 25px 50px; /* сделать сделал а суть не понял, почитать про разметку еще раз */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    height: 757px; 
+    padding: 165px 50px 50px 50px; 
     position: relative;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/cover.jpg);
     background-size: cover;
     background-position: center;  
+    margin-bottom: 153px;
+    
 }   
 .overlay {
     display: block;
@@ -93,18 +97,17 @@
 
 .individual--cover-letter {
     position: relative;
-    margin-left:30px; /* Увеличиваем отступ первым двум */
-    margin-right:30px; /* Для последней нужен отступ справа */    
+    margin-left:30px; /* Увеличиваем отступ первым двум буквам */
+    margin-right:30px; /* Для последней буквы нужен отступ справа  */    
 }
 
 .cover__footer {
     display: flex;
-    justify-content: space-between;
-    margin: 128px 0px 37px 28px;
     word-spacing: 19px;
     font-size: 22px;
     text-transform: uppercase;
-    color: white;    
+    color: white;
+    align-self: flex-end;
 }
 
 /* возможно лишнее, позже проверить удалить или попробовать объединить с полуподвалом */
@@ -121,26 +124,25 @@
 
 /* Дальше все для блока lots */
 
-.lots-options {
-    display:block;
-    position: relative;
-    
+.card-container { /* Будет похоже */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* по сути можем добавить сколько угодно карточек */ 
+    padding: 27px 24px;
+    gap: 27px;
 }
 
 .h2-title {
+    grid-column: 1/4;
     font-size: 40px;
     text-transform: uppercase;
-    padding-top: 179px;
-    padding-left: 64px;
+    padding-left: 40px;
 } /* Будут Похожие с заголовком About */
 
-.card-container { /* Будет похоже */
-    display: grid;
-    justify-content: space-between; 
-    grid-template-columns: repeat(3, 1fr); /* по сути можем добавить сколько угодно карточек */ 
-    padding: 27px 24px;
+.card-option {
+    grid-column: span 3;
+    display:grid; 
+    grid-template-columns: repeat(3, 1fr);
     gap: 25px;
-    align-content: space-between;   
 }
 
 .h3-title {
@@ -150,8 +152,7 @@
 .card {
     display: grid; /*  как вариант гридануть */
     height: 563px;
-    flex-basis: 30%;
-    box-sizing: border-box;
+    width: 334px;
     padding: 52px 40px 48px 40px;
     font-size: 20px;
     font-weight: 400px;
@@ -175,14 +176,18 @@
 
 .button-lots {
     display: block;
+    font-family: 'Raleway', sans-serif;
+    grid-column: span 3;
     border: none;
     background-color: white;
     outline: none;
     text-decoration: underline; /* Возможно надо будет добавить класс с андерлайном */
     font-size: 20px;
-    font-family: 'Raleway', sans-serif;
-    margin-left: 58px;
-    margin-top: 3px;
+    justify-self: start;
+    align-items:end;
+    padding-left: 40px;
+    padding-top: 3px;
+   
    
 
 }
