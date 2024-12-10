@@ -76,6 +76,7 @@ li {
     margin-bottom: 153px;
     
 }   
+
 .overlay {
     display: block;
     position: absolute;    
@@ -146,10 +147,10 @@ li {
 .h2-title {
     grid-column: 1/4;
     font-size: 40px;
-    text-transform: uppercase;
-    
-    
-} /* Будут Похожие с заголовком About */
+    text-transform: uppercase; 
+} 
+
+/* Будут Похожие с заголовком About */
 
 .h2__lots_position {
     padding-left: 40px;
@@ -221,9 +222,10 @@ h3 {
     line-height: 24px;
 }
 
-lots {
+.section-lots {
     margin-bottom: 128px;
 }
+
 /* Это часть кода CSS для ABOUT */
 
 .circle-background { 
@@ -241,6 +243,7 @@ lots {
     width: 62%;  
     height: auto;
 }
+
 .about-title {
     grid-column: 2/4; 
 }
