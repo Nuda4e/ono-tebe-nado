@@ -134,7 +134,7 @@ li {
 
 /* Дальше все для блока lots */
 
-.card-container { /* Будет похоже */
+.card-container { 
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* по сути можем добавить сколько угодно карточек */ 
     padding: 27px 24px;
