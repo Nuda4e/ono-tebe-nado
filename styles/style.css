@@ -154,6 +154,7 @@ li {
 .h2__lots_position {
     padding-left: 40px;
 }
+
 .card-option {
     grid-column: span 3;
     display:grid; 
