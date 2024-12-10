@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./styles/style.css">  
   </head>
   <body>
+    <!-- Секция HEADER -->
     <header class="header grid__conteiner">
       <ul class="grid_position_list">
         <li>главная</li>
@@ -26,6 +27,7 @@
         <div> наб. Принсенграхт 263-<br> 265, Амстердам</div>
       </address>
     </header>
+    <!-- Секция COVER -->
     <cover class="cover__main">
       <div class="overlay"></div>
       <h1 class="cover__title">
@@ -41,7 +43,7 @@
       </div>
     </cover>
     <lots class="card-container">
-      <h2 class="h2-title">Лоты</h2>
+      <h2 class="h2-title h2__lots_position">Лоты</h2>
       <div class="card-option">
         <div class="card card-1">
           <h3 class="h3-title">Фильм режиссёра, который бросил киношколу</h3>
@@ -66,13 +68,15 @@
       </div>
       <button class="button-lots">посмотреть больше</button>
     </lots>
-
+    <!-- Секция ABOUT -->
     <about class="card-container">
-      <div class="circle-background grid_position_logo">
-        <img src="./images/logo-white.svg" alt="Логотип" >
+      <div class="circle-background">
+        <img src="./images/logo-white.svg" alt="Логотип" class="size-logo" >
       </div>
       <div class="about-title">
-        <h2 class="h2-title">Об аукционе</h2>
+        <h2 class="h2-title h2_about--position">Об аукционе</h2>
+      </div>
+      <div class="paragraph about_paragraf">
         <p>Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. 
           Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, 
           которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?</p>
@@ -81,8 +85,9 @@
           на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. 
           Когда в эти вещи не верил никто, продолжали верить их создатели. 
           И сейчас эти лоты стали культовыми. </p>
-      </div>
+        </div>
     </about>
-    <footer></footer>
+    <!-- Секция FOOTER -->
+    <footer></footer>        <!-- Можно попробовать сделать грид с 3мя элементами, первые два блока похожи на шапку, а третий грид или даже флекс с 3мя картинками -->
   </body>
 </html>

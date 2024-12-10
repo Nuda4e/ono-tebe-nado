@@ -83,7 +83,6 @@
 }
 
 .aligned-text--second {
-    display:;
     margin-top:9px;
     margin-left: 286px;
 }
@@ -129,15 +128,20 @@
     grid-template-columns: repeat(3, 1fr); /* по сути можем добавить сколько угодно карточек */ 
     padding: 27px 24px;
     gap: 27px;
+    background-color: blue;                                                                     /* УДАЛИТЬ ПОДСВЕТКА ЧТОБЫ ВИДЕТЬ БЛОК  */
 }
 
 .h2-title {
     grid-column: 1/4;
     font-size: 40px;
     text-transform: uppercase;
-    padding-left: 40px;
+    
+    
 } /* Будут Похожие с заголовком About */
 
+.h2__lots_position {
+    padding-left: 40px;
+}
 .card-option {
     grid-column: span 3;
     display:grid; 
@@ -154,8 +158,6 @@
     height: 563px;
     width: 334px;
     padding: 52px 40px 48px 40px;
-    font-size: 20px;
-    font-weight: 400px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; 
@@ -204,16 +206,47 @@ h3 {
     align-self: end;
     position: relative;
     z-index: 2;
+    font-size: 20px;
+    font-weight: 400px;
+    line-height: 24px;
 }
 
+lots {
+    margin-bottom: 128px;
+}
 /* Это часть кода CSS для ABOUT */
+
 .circle-background { 
-    width: 240px;
-    height: 240px;
-    background-color: black;
-    border-radius: 50%; 
+    display: flex;  
+    place-self: center;
+    justify-content: center;  
+    align-items: center;  
+    width: 240px;  
+    height: 240px; 
+    border-radius: 50%;  
+    background-color: black;  
 }
 
+.size-logo {
+    width: 62%;  
+    height: auto;
+}
 .about-title {
     grid-column: 2/4; 
+}
+
+.h2_about--position {
+    padding-top: 9px;
+    display: grid;
+    height: 100%;
+    align-items: center;
+    
+}
+
+.about_paragraf {
+    display: grid;
+    grid-column: 2/4;
+    margin-top: -19px;
+    padding-right: 5px;
+    gap: 24px;
 }
