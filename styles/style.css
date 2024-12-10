@@ -70,6 +70,7 @@ li {
     background-size: cover;
     background-position: center;
     margin-bottom: 153px;
+
 }
 
 .overlay {
@@ -81,6 +82,7 @@ li {
     display: block;
     text-transform: uppercase;
     font-size: 100px;
+    font-weight: 700;
     letter-spacing: 0.3em;
     color: white;
 }
