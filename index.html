@@ -15,15 +15,15 @@
     <header class="header grid__conteiner">
       <ul class="grid_position_list">
         <li>главная</li>
-        <li class="list__peculiarity no-underline" >посмотреть лоты</li>
-        <li class="list__peculiarity no-underline">об аукционе</li>
+        <li class="list__peculiarity do-underline" >посмотреть лоты</li>
+        <li class="list__peculiarity do-underline">об аукционе</li>
       </ul>
       <div class="grid_position_logo">
         <img src="./images/logo-black.svg" alt="Логотип" >
       </div>
       <address class="address grid_position_address">
-        <a href="tel:+99995555555" class="no-underline">+9 999 555 5555</a>
-        <a href="info@sobaka.ge" class="no-underline">info@sobaka.ge</a>
+        <a href="tel:+99995555555" class="do-underline">+9 999 555 5555</a>
+        <a href="info@sobaka.ge" class="do-underline">info@sobaka.ge</a>
         <div> наб. Принсенграхт 263-<br> 265, Амстердам</div>
       </address>
     </header>
@@ -42,6 +42,7 @@
         </p>
       </div>
     </cover>
+    <!-- Секция LOTS -->
     <lots class="card-container">
       <h2 class="h2-title h2__lots_position">Лоты</h2>
       <div class="card-option">
@@ -88,6 +89,24 @@
         </div>
     </about>
     <!-- Секция FOOTER -->
-    <footer></footer>        <!-- Можно попробовать сделать грид с 3мя элементами, первые два блока похожи на шапку, а третий грид или даже флекс с 3мя картинками -->
+    <footer class="header grid__conteiner">
+      <address class="address grid_position_address">
+        <a href="tel:+99995555555" class="do-underline">+9 999 555 5555</a>
+        <a href="info@sobaka.ge" class="do-underline">info@sobaka.ge</a>
+        <div> наб. Принсенграхт 263-<br> 265, Амстердам</div>
+      </address>
+      <div>
+        <ul class="grid__conteiner">
+        <li>главная</li>
+        <li class="list__peculiarity do-underline" >посмотреть лоты</li>
+        <li class="list__peculiarity do-underline">об аукционе</li>
+        </ul>
+      </div>
+      <div class="footer__logo--size footer__social-icon">
+        <img src="./images/yt.svg" alt="Логотип YouTube" >
+        <img src="./images/vk.svg" alt="Логотип VKontakte" >
+        <img src="./images/pinterest.svg" alt="Логотип Pinterest" >
+      </div>
+    </footer>        
   </body>
 </html>
