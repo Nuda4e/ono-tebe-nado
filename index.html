@@ -13,78 +13,75 @@
   <body>
     <!-- Секция HEADER -->
     <header class="header grid__conteiner">
-      <div class="nav-option">
+      <nav class="nav-option">
        <ul class="grid_position_list">
-        <li class="crutches">главная</li>
-        <li class="do-underline" >посмотреть лоты</li>
-        <li class="do-underline">об аукционе</li>
+        <li class="crutches"><a>главная</a></li>
+        <li class="do-underline" ><a>посмотреть лоты</a></li>
+        <li class="do-underline"><a>об аукционе</a></li>
         </ul>
-      </div>
+      </nav>
       <a href="/" class="header__logo--position">
         <img src="./images/logo-black.svg" alt="Логотип" >
       </a>
-      <div class="grid_position_address">
+      <address class="grid_position_address">
         <a href="tel:+99995555555" class="do-underline">+9 999 555 5555</a>
         <a href="mailto:info@sobaka.ge" class="do-underline">info@sobaka.ge</a>
-        <div> наб. Принсенграхт 263-<br> 265, Амстердам</div>
-      </div>
+        <p> наб. Принсенграхт 263-<br> 265, Амстердам</p>
+      </address>
     </header>
     <!-- Секция COVER -->
     <main>
-
       <div class="aligned-text ">
       <section class="cover__main background-rule">
-        <div class="cover__title ">
-          <div class="aligned-text--first">ОН<span class="individual--cover-letter">О</span></div>
-          <div class="aligned-text--second">ТЕБ<span class="individual--cover-letter">Е</span></div>
-          <div class="aligned-text--third"><span class="individual--cover-letter">Н</span>АДО</div>
-        </div>
-        <div class="cover__footer ">
-          <p>Аукцион вещей, в которые никто не верил
-            <button class="cover__footer--button">сделать ставку
-            </button>
-         </p>
+        <h1 class="cover__title">
+          <span class="aligned-text--left">О<span class="individual--cover-letter">НО</span></span>
+          <span class="aligned-text--center">ТЕ<span class="individual--cover-letter">БЕ</span></span>
+          <span class="aligned-text--right"><span class="individual--cover-letter">Н</span><span class="word-individual">АД</span>O</span>
+        </h1>
+        <div class="cover__footer">
+          <p class="place-text">Аукцион вещей, в которые никто не верил</p>
+          <button class="cover__footer--button">сделать ставку</button>
         </div>
         <div class="overlay"></div>
       </section>
       </div>
     <!-- Секция LOTS -->
       <section class="card-container section-lots">
-        <h2 class="h2-title h2__lots_position">Лоты</h2>
+        <h2 class="header-card_title header-card__lots_position">Лоты</h2>
         <div class="card-option">
-          <div class="card card-1 background-rules cards-info">
-            <h3 class="h3-title">Фильм режиссёра, который бросил киношколу</h3>
+          <a href="https://www.kinopoisk.ru/media/article/2794087/" class="card card-left background-rules cards-info">
+            <h3 class="inside-card-title">Фильм режиссёра, который бросил киношколу</h3>
             <p class="paragraph">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка,
               если бы вы не знали, что режиссёр — Пол Томас Андерсон?
            </p>
            <div class="overlay"></div>
-          </div>
-          <div class="card card-2 cards-info">
-            <h3 class="h3-title">Книга, где описан один скучный день из жизни рекламного агента</h3>
+          </ф>
+          <a href="https://www.litres.ru/book/devid-ogilvi/otkroveniya-reklamnogo-agenta-4242205/" class="card card-center cards-info">
+            <h3 class="inside-card_title">Книга, где описан один скучный день из жизни рекламного агента</h3>
             <p class="paragraph">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский.
               В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён.
               И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?
            </p>
            <div class="overlay"></div>
-         </div>
-         <div class="card card-3 cards-info  dark-background">
-           <h3 class="h3-title">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
+         </a>
+         <a href="https://dzen.ru/a/Z04VESFGpjgweiOS" class="card card-right cards-info">
+           <h3 class="inside-card_title">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
             <p class="paragraph">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку.
               Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали,
               что это — одна из революционных работ Кандинского?
             </p>
             <div class="overlay"></div>
-          </div>
+          </a>
         </div>
-        <button class="button-lots">посмотреть больше</button>
+        <a class="button-lots">посмотреть больше</a>
       </section>
     <!-- Секция ABOUT -->
-      <section class="card-container">
+      <section class="card-container about-position">
         <div class="circle-background">
           <img src="./images/logo-white.svg" alt="Логотип" class="size-logo" >
         </div>
         <div class="about-title">
-          <h2 class="h2-title h2_about--position">Об аукционе</h2>
+          <h2 class="header-card_title header-card-about--position">Об аукционе</h2>
         </div>
         <div class="paragraph about_paragraf">
           <p>Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата.
@@ -103,19 +100,19 @@
       <address class="address grid_position_address">
         <a href="tel:+99995555555" class="do-underline">+9 999 555 5555</a>
         <a href="info@sobaka.ge" class="do-underline">info@sobaka.ge</a>
-        <div> наб. Принсенграхт 263-<br> 265, Амстердам</div>
+        <p> наб. Принсенграхт 263-<br> 265, Амстердам</p>
       </address>
-      <div class="footer-list crutches">
+      <nav class="footer-list">
         <ul class="crutches">
-        <li>главная</li>
-        <li class="do-underline" >посмотреть лоты</li>
-        <li class="do-underline">об аукционе</li>
+          <li><a>главная</a></li>
+          <li class="do-underline" ><a>посмотреть лоты</a></li>
+          <li class="do-underline"><a>об аукционе</a></li>
         </ul>
-      </div>
-      <div class="footer__logo--size footer__social-icon grid">
-        <img src="./images/yt.svg" alt="Логотип YouTube" >
-        <img src="./images/vk.svg" alt="Логотип VKontakte" >
-        <img src="./images/pinterest.svg" alt="Логотип Pinterest" >
+      </nav>
+      <div class="footer__social-icon">
+        <a href="https://www.youtube.com/" target="_blank"><img src="./images/yt.svg" alt="Логотип YouTube" class="footer__logo--size"></a>
+        <a href="https://vk.com/" target="_blank"><img src="./images/vk.svg" alt="Логотип VKontakte" class="footer__logo--size"></a>
+        <a href="https://www.pinterest.com/" target="_blank"><img src="./images/pinterest.svg" alt="Логотип Pinterest" class="footer__logo--size"></a>
       </div>
     </footer>
   </body>
