@@ -139,8 +139,8 @@ li {
 }
 
 .place-text {
-  display: block;
-  align-self: center;
+    display: block;
+    align-self: center;
 }
 
 .cover__footer--button {
@@ -252,7 +252,6 @@ h3 {
 
 .circle-background {
     display: flex;
-    place-self: center;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
