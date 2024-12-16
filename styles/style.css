@@ -1,18 +1,16 @@
 .body {
     margin: 0 auto;
     max-width: 1100px;
-
 }
 
 .header {
     width: 1100px;
-    margin-bottom:40px;
-
+    min-height: 293px;
 }
 
 .grid__conteiner {
     display: grid;
-    padding: 93px 0px 50px 50px;
+    padding: 50px 0px 50px 50px;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     justify-content:space-between;
@@ -26,7 +24,7 @@
 li {
     margin-right: 32px;
     white-space: nowrap;
-  }
+}
 
 .grid_position_list {
     display: flex;
@@ -63,12 +61,12 @@ li {
 
 .overlay {
     position: absolute;
-   top: 0;
-   left: 0;
+    top: 0;
+    left: 0;
     right: 0;
-   bottom: 0;
-   background-color: rgba(0, 0, 0, 0.6);
-   z-index: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 0;
 }
 
 .aligned-text {
@@ -79,7 +77,8 @@ li {
 .cover__main {
     display: grid;
     align-items: start;
-    z-index: 0;
+    position: relative;
+    z-index: 1;
     min-width: 1100px;
     min-height: 757px;
     padding: 163px 50px 50px 50px;
@@ -98,10 +97,6 @@ li {
     line-height: 126px;
     z-index: 1;
     letter-spacing: 0.3em;
-    /* gap:15px;
-    font-size: 100px;
-
-    z-index: 1; */
 }
 
 .aligned-text--left {
@@ -152,7 +147,7 @@ li {
     margin-left: 52px;
     background: none;
     border: 1px solid currentcolor;
-    color: white;
+    color: white;;
     font-size: 22px;
     padding:12px 31px;
     text-transform: uppercase;
@@ -161,7 +156,7 @@ li {
 .card-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 27px 24px;
+    padding: 30px 24px;
     gap: 27px;
 }
 
@@ -182,7 +177,7 @@ li {
     gap: 25px;
     overflow: hidden;
     z-index: 1;
-  }
+}
 
 .inside-card_title {
     line-height: 26.4px;
@@ -198,6 +193,7 @@ li {
     color: white;
     line-height: 24px;
     position: relative;
+    text-decoration: none;
 }
 
 .card-left {
@@ -264,6 +260,7 @@ h3 {
     height: 240px;   /* Тут фиксированный круг, не стал ничего менять */
     border-radius: 50%;
     background-color: black;
+    place-self: start center;
 }
 
 .size-logo {
@@ -273,24 +270,29 @@ h3 {
 
 .about-title {
     grid-column: 2/4;
-    align-content: space-around;
+    display: grid;
+    grid-auto-flow: row;
+    gap: 100px;
+    place-content: center;
+    padding-top: 110px;
 }
 
-.about_paragraf {
+.about-paragraf {
+    grid-column: 1/4;
     display: flex;
     flex-direction: column;
-    grid-column: 2/4;
     padding-right: 5px;
     gap: 24px;
 }
 
 .footer-position {
     display: grid;
-    padding-top: 135px;
+    place-items: start;
+    padding-top: 151px;
 }
 
 .footer__logo--size {
-    height: 48px;       /* Тут по сути тоже фикс изображения. могу ошибаться */
+    height: 48px;
     width: 48px;
 }
 
@@ -307,5 +309,5 @@ h3 {
 }
 
 .about-position {
-  margin-top: 120px;
+  margin-top: 110px;
 }
